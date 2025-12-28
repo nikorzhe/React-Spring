@@ -1,10 +1,13 @@
 import * as pages from './pages';
 import config from 'config';
 
-const result = {
-  [pages.defaultPage]: `${config.UI_URL_PREFIX}/${pages.defaultPage}`,
-  [pages.login]: `${config.UI_URL_PREFIX}/${pages.login}`,
-  [pages.secretPage]: `${config.UI_URL_PREFIX}/${pages.secretPage}`,
+const UI_PREFIX = config.UI_URL_PREFIX || '';
+
+const pageURLs = {
+  [pages.defaultPage]: `${UI_PREFIX}/`,
+  [pages.detailsPage]: `${UI_PREFIX}/books`,
+  [pages.secretPage]: `${UI_PREFIX}/secret`,
+  [pages.login]: `${UI_PREFIX}/login`,
 };
 
-export default result;
+export default pageURLs;

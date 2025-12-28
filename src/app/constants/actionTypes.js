@@ -12,3 +12,11 @@ export const REQUEST_SIGN_UP = 'REQUEST_SIGN_UP';
 export const SUCCESS_SIGN_UP = 'SUCCESS_SIGN_UP';
 
 export const REQUEST_SIGN_OUT = 'REQUEST_SIGN_OUT';
+
+export const RECEIVE_BOOK = 'RECEIVE_BOOK';
+export const REQUEST_BOOK = 'REQUEST_BOOK';
+
+export const REQUEST_BOOKS = 'REQUEST_BOOKS';
+export const RECEIVE_BOOKS = 'RECEIVE_BOOKS';
+
+

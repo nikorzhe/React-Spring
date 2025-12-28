@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="2025-12-10-insert-10-authors" author="nik">
+        <comment>Наповнення Сутності Author </comment>
+
+        <insert tableName="author">
+            <column name="first_name" value="Тарас"/>
+            <column name="last_name" value="Шевченко"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Іван"/>
+            <column name="last_name" value="Франко"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Леся"/>
+            <column name="last_name" value="Українка"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Михайло"/>
+            <column name="last_name" value="Коцюбинський"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Василь"/>
+            <column name="last_name" value="Стус"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Ліна"/>
+            <column name="last_name" value="Костенко"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Олександр"/>
+            <column name="last_name" value="Довженко"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Григорій"/>
+            <column name="last_name" value="Сковорода"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Павло"/>
+            <column name="last_name" value="Тичина"/>
+        </insert>
+        <insert tableName="author">
+            <column name="first_name" value="Ольга"/>
+            <column name="last_name" value="Кобилянська"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,28 +1,26 @@
 import React from 'react';
-import {
-  IntlProvider as ReactIntlProvider,
-} from 'react-intl';
+import { IntlProvider as ReactIntlProvider } from 'react-intl';
 
-import useLocationSearch from 'misc/hooks/useLocationSearch';
-import { DEFAULT_LANGUAGE, locales } from 'misc/constants/languages';
+const fallbackMessages = {
+    title: 'Книги',
+    signIn: 'Увійти',
+    signOut: 'Вийти',
+};
 
-function IntlProvider({
-  children,
-  messages,
-}) {
-  const {
-    lang,
-  } = useLocationSearch();
+function IntlProvider({ children, messages: propMessages }) {
+    const messages = propMessages && Object.keys(propMessages).length > 0
+        ? propMessages
+        : fallbackMessages;
 
-  return (
-    <ReactIntlProvider
-      defaultLocale={locales[DEFAULT_LANGUAGE]}
-      locale={locales[lang]}
-      messages={messages}
-    >
-      {children}
-    </ReactIntlProvider>
-  );
+    return (
+        <ReactIntlProvider
+            locale="uk-UA"
+            defaultLocale="uk-UA"
+            messages={messages}
+        >
+            {children}
+        </ReactIntlProvider>
+    );
 }
 
 export default IntlProvider;

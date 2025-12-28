@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Кобзар",
+    "genre": "Поезія",
+    "yearPublished": 1840,
+    "authorId": 1
+  },
+  {
+    "title": "Захар Беркут",
+    "genre": "Історична повість",
+    "yearPublished": 1883,
+    "authorId": 2
+  },
+  {
+    "title": "Лісова пісня",
+    "genre": "Драма-феєрія",
+    "yearPublished": 1911,
+    "authorId": 3
+  },
+  {
+    "title": "Тіні забутих предків",
+    "genre": "Повість",
+    "yearPublished": 1911,
+    "authorId": 4
+  },
+  {
+    "title": "Маруся Чурай",
+    "genre": "Роман у віршах",
+    "yearPublished": 1979,
+    "authorId": 6
+  },
+  {
+    "title": "Мойсей",
+    "genre": "Поема",
+    "yearPublished": 1905,
+    "authorId": 2
+  },
+  {
+    "title": "Вир",
+    "genre": "Роман",
+    "yearPublished": 1958,
+    "authorId": 9
+  },
+  {
+    "title": "Сад Гетсиманський",
+    "genre": "Роман",
+    "yearPublished": 1964,
+    "authorId": 5
+  }
+]
